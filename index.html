@@ -8,10 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https: //fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Fira+Sans:wght@700&display=swap" rel="stylesheet">
 <title>medical</title>
+<script src="./app.js"></script>
 </head>
 <body>
     <header>
-        <h1>медицина для всех</h1>
+        <h1 id="h1">медицина для всех</h1>
         <nav class="navi">
             <a href="1">статьи о хирургических болезнях</a>
             <a href="1"> антикоагулянты</a>
@@ -19,8 +20,30 @@
 
         </nav>
         <section class="section">
-            <a href="https://calcus.ru/calculator-imt"> Калькулятор расчета индекса массы тела</a>
+            <a href="https://calcus.ru/calculator-imt" id="button"> Калькулятор расчета индекса массы тела</a>
         </section>
+        <form action="#" id="form">
+        
+            <label for="name">Введите Ваше имя</label>
+            <input type="text" name="name" id="name" placeholder="введите имя" minlength="2" maxlength="50" ><br>
+            
+            <span>Ваш пол</span><br>
+            
+            <label for="men">Мужской</label>
+            <input type="radio" name="sex" id="men" ><br>
+            
+            <label for="women">Женский</label>
+            <input type="radio" name="sex" id="women" ><br>
+           
+            <label for="passvord">введите пороль</label>
+            <input type="password" name="password" id="password"><br>
+            
+            <label for="newpassvord">введите пороль еще раз для проверки</label>
+            <input type="password" name="newpassword" id="newpassword"><br>
+            <button type="submit"class="button">Готово</button>
+       
+        </form>
+        
     </header>
 </body>
 </html>
